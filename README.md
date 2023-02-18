@@ -1,7 +1,9 @@
 # pyArsenal
-- Widgets of Python
 
-#### Useage
+
+### Widgets of Python
+
+#### Usage
 ```bash
 git submodule add git@github.com:miaoyc666/pyArsenal.git
 git submodule init

@@ -15,7 +15,7 @@ from elasticsearch_dsl import Search
 context = ssl._create_unverified_context()
 
 
-class EsUtils(object):
+class ESClient(object):
     def __init__(self, es_hosts, http_auth, index, doc_type, url_prefix="", timeout=5, max_retries=2,
                  retry_on_timeout=True, ssl_context=context):
         self.es_client = Elasticsearch(

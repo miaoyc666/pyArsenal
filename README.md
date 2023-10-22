@@ -11,8 +11,8 @@ git submodule update
 ```
 
 #### Index
-- [Image encoded as base64](./gen_base64_image.py)
-- [AES encryption and decryption](./aes.py), Corresponding Golang version: [aes.go](https://github.com/miaoyc666/goArsenal/blob/master/aes/aes.go)
+- [Image encoded as base64](gen_base64_image.py)
+- [AES encryption and decryption](aes/aes.py), Corresponding Golang version: [aes.go](https://github.com/miaoyc666/goArsenal/blob/master/aes/aes.go)
 
 #### Doc
 - [Python Basic Commands](https://github.com/miaoyc666/rd-manual/blob/main/Python/README.md)

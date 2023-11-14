@@ -6,7 +6,7 @@ File name    : send_email.py
 Author       : miaoyc
 Create Date  : 2023/11/14 16:39
 Update Date  : 2023/11/14 16:39
-Description  : 发送电子邮件
+Description  : send email
 """
 
 import os
@@ -28,8 +28,9 @@ def send_mail(mail_to, mail_from, subject, html, files=[], image_paths=[], serve
     msg['Date'] = formatdate(localtime=True)
     msg['Subject'] = subject
 
-    # 如果 text 是html，则需要设置 _subtype='html'
-    # 默认情况下 _subtype='plain'，即纯文本, 开启html模式依旧可以发送文本信息，故此处设置为html类型
+    # If the text is HTML, it needs to be set_ Subtype='html 
+    # By default_ Subtype='plain ', which means plain text. 
+    # Even when the HTML mode is turned on, text messages can still be sent, so this is set as an HTML class
     msg.attach(MIMEText(html, _subtype='html', _charset='utf-8'))
 
     for f in files:

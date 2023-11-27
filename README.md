@@ -1,6 +1,5 @@
 # pyArsenal
 
-
 ### Widgets of Python
 
 #### Usage

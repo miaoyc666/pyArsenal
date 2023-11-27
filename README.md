@@ -15,6 +15,7 @@ git submodule update
 - [AES encryption and decryption](aes/aes.py), Corresponding Golang version: [aes.go](https://github.com/miaoyc666/goArsenal/blob/master/aes/aes.go)
 - [Yaml file read and write](yaml/__init__.py)
 - [DB]->[mysql](mysql)->[pymysql demo](mysql/pymysql/demo.py)
+- [DB]->[mysql](mysql)->[sqlalchemt demo](mysql/sqlalchemy/demo.py)
 
 
 #### Doc

@@ -9,6 +9,11 @@ Description  :
 """
 
 """
+依赖：
+pip3 install pymysql
+"""
+
+"""
 User表建表语句:
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -27,16 +32,15 @@ VALUES
     ('Sarah Brown', 'sarah.brown@example.com', 'password100');
 """
 
-import os
-import time
 import pymysql
-import traceback
 
 MYSQL_HOST = '127.0.0.1'
 USER = 'miaoyc'
 PASSWORD = 'xxx'
 DB = 'xxx'
 PORT = 3306
+
+
 
 db = pymysql.connect(host=MYSQL_HOST, user=USER, passwd=PASSWORD, db=DB, port=PORT)
 cur = db.cursor()
@@ -65,9 +69,7 @@ def delete(user_name):
     # 执行SQL删除操作
     sql = "DELETE FROM users WHERE name = %s"
     cur.execute(sql, (user_name,))
-
-    # 提交事务
-    # conn.commit()
+    db.commit()
 
 def print_result(rows):
     for row in rows:

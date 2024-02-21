@@ -1,6 +1,13 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
 
+"""
+File name    : __init__.py
+Author       : miaoyc
+Create time  : 2020/8/7 20:49
+Update time  : 2024/2/21 20:49
+Description  : 图片转换为base64编码
+"""
 
 import sys
 import base64

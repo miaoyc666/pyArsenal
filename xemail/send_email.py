@@ -11,15 +11,19 @@ Description  : send email
 
 import os
 import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.base import MIMEBase
-from email.mime.text import MIMEText
-from email.mime.image import MIMEImage
-from email.utils import COMMASPACE, formatdate
 from email import Encoders
+from email.mime.base import MIMEBase
+from email.mime.image import MIMEImage
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.utils import COMMASPACE, formatdate
 
 
-def send_mail(mail_to, mail_from, subject, html, files=[], image_paths=[], server="localhost"):
+def send_mail(mail_to, mail_from, subject, html, files=None, image_paths=None, server="localhost"):
+    if image_paths is None:
+        image_paths = []
+    if files is None:
+        files = []
     assert type(mail_to) == list
 
     msg = MIMEMultipart()

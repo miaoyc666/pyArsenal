@@ -1,24 +1,46 @@
 # pyArsenal
 
-### Widgets of Python
+A comprehensive Python toolkit library providing commonly used utilities for encryption, hashing, encoding, database operations, and more.
 
-#### Usage
+## 📖 Documentation
+
+Please select your preferred language:
+
+- **[English Documentation](./README_EN.md)** - Complete English documentation with examples
+- **[中文文档](./README_CN.md)** - 完整中文文档及示例
+
+## Quick Links
+
+### Installation
+
 ```bash
+# As a git submodule
 git submodule add git@github.com:miaoyc666/pyArsenal.git
 git submodule init
 git submodule update
+
+# Update submodule
+git submodule update --remote
 ```
 
-#### Index
-* [encoding](encoding)
-* [hash](hash)
-* [regex](regex)
-* [Image encoded as base64](gen_base64_image.py)
-* [AES encryption and decryption](aes/aes.py), Corresponding Golang version: [aes.go](https://github.com/miaoyc666/goArsenal/blob/master/aes/aes.go)
-* [Yaml file read and write](yaml/__init__.py)
-* [DB]->[mysql](mysql)->[pymysql demo](mysql/pymysql/demo.py)
-* [DB]->[mysql](mysql)->[sqlalchemy demo](mysql/sqlalchemy/demo.py)
+### Available Modules
 
+- **Core**: [encoding](encoding), [hash](hash), [regex](regex), [xdatetime](xdatetime)
+- **Security**: [aes](aes), [xemail](xemail)
+- **Database**: [mysql](mysql), [mongo](mongo)
+- **Cloud**: [s3](s3), [es](es)
+- **Network**: [network](network)
+- **Utilities**: [yaml](yaml), [download](download)
 
-#### Doc
-- [Python Basic Commands](https://github.com/miaoyc666/rd-manual/blob/main/Python/README.md)
+## Related Projects
+
+- [goArsenal](https://github.com/miaoyc666/goArsenal) - Golang version
+- [rd-manual](https://github.com/miaoyc666/rd-manual) - Reference documentation
+
+## License
+
+MIT
+
+## Author
+
+[miaoyc](https://github.com/miaoyc666)
